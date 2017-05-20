@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
+import org.springframework.stereotype.Component;
 
 
 
@@ -18,7 +19,7 @@ import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
 @Configuration
 @EnableScheduling
-/*@Component*/
+@Component
 public class FactoryManagers {
     @Autowired
     private QuartzUnionFactory unionFactory;
